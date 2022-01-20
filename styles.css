@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* section, footer {
+    padding: 7em 0 7em 0;
+} */
+
+/* header.hero {
+
+} */
+.nav-item {
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+}
+.nav-item:hover {
+    border-bottom: 4px solid #fb7400;
+    transition: 0.5s;
+}
+.nav-item:hover a {
+    color: #fb7400 !important;
+}
+header.hero .container {
+    z-index: 999;
+}
+
+header.hero {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-opaca {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9;
+    opacity: 0.4;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    left: 0;
+}
+/* .color {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    background-color: #353d50;
+} */
+
+div.big_image_servicios {
+    height: 90vh;
+    padding: 0;
+    background-image: url(img/about.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+div.big_image_servicios::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 125px solid transparent;
+    border-left: 125px solid #fb7400;
+}
+
+/* FILTRO */
+.descripcion_filtrada {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px grey;
+}
+#p_1, #p_2, #p_3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.is-active#p_1, .is-active#p_2, .is-active#p_3 {
+    position: relative;
+    opacity: 1 !important;
+    transition: 0.5s;
+}
+
+button.contact_us {
+    display: inherit;
+    margin: 0 auto;
+}
+
+.box_slider {
+    background-color: #1e263b;
+    position: relative;
+    overflow: hidden;
+}
+
+.left, .right {
+    z-index: 9;
+}
+
+.caption_style {
+    background-color: white;
+    border-radius: 10px;
+    z-index: 99999;
+    width: 60%;
+    margin: 0 auto;
+    position: sticky !important;
+    bottom: 2.25rem !important;
+    padding: 16px !important;
+    font-style: italic;
+}
+.caption_style h5 {
+    color: #fb7400;
+}
+
+h4.description_social {
+    align-items: end;
+    display: flex;
+}
+
+.case {
+    width: 35px;
+    padding: 0;
+}
+
+.linkcito img {
+    width: 16px;
+}
+
+.linkcito {
+    color: white;
+    text-decoration: none;
+}
+
+/*  */
+.bg-naranja {
+    background-color: #fb7400;
+}
+.bg-azul-oscuro {
+    background-color: #1e263b;
+}
+.bg-azul-oscuro-oscuro {
+    background-color: #040e27;
+}
+.bg-gris {
+    background-color: #dcdddf;
+}
+
+.color-naranja {
+    color: #fb7400;
+}
+.color-ocean {
+    color: #8cd7bc;
+}
+.input input {
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+.input-form {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+/*  */
+
+.columna_uno {
+    position: relative;
+}
+.columna_uno .tit-section h3:after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: #fb7400;
+    display: block;
+}
+
+
+/* BOTONES */
+.btn_1 {
+    background-color: #353d50;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: 0.6s
+}
+.btn_1:hover {
+    box-shadow: 0px 0px 5px #353d50;
+    transition: 0.6s
+}
+.btn_2 {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    transition: 0.6s;
+    box-shadow: 0px 0px 1px grey;
+}
+.btn_2.is-active {
+    background-color: #fb7400;
+    color: white;
+    transition: 0.6s
+}
+.btn_3 {
+    background-color: #faad01;
+    color: white;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    transition: 0.6s
+}
+
+/* slider de servicios */
+.into_case {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.bola_naranja {
+    position: absolute;
+    background: orange;
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: -10px;
+}
+
+/* botones indicadores slider */
+.carousel-indicators-services {
+    bottom: -55px !important;
+}
+.carousel-indicators-clients {
+    bottom: -16px !important;
+}
+.carousel-indicators button {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    border: none !important;
+    box-shadow: 0px 0px 1px whitesmoke;
+}
+.carousel-indicators button.active {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background: #fb7400 !important;
+}
+
+/* seccion copyright */
+.log_icon {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* barra de horarios */
+.contenedor_horarios_ubicacion {
+    align-self: center;
+}
+/* follow us */
+.contenedor_follow_us {
+    align-self: center;
+}
+img.follow_us_img {
+    background-color: white;
+    border-radius: 2px;
+    width: 20px;
+    min-width: 15px;
+}
+
+/* telon */
+.telon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fb7400;
+    transition: 0.8s;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 9999;
+}

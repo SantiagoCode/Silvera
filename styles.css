@@ -7,13 +7,37 @@ img {
     max-width: 100%;
 }
 
-/* section, footer {
-    padding: 7em 0 7em 0;
-} */
 
-/* header.hero {
+/* TELON */
+.telon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fb7400;
+    transition: 0.8s;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 9999;
+}
 
-} */
+/* BARRA DE HORARIOS */
+.contenedor_horarios_ubicacion {
+    align-self: center;
+}
+  /* follow us */
+.contenedor_follow_us {
+    align-self: center;
+}
+img.follow_us_img {
+    background-color: white;
+    border-radius: 2px;
+    width: 20px;
+    min-width: 15px;
+}
+
+/* NAVEGACION */
 .nav-item {
     border-bottom: 3px solid transparent;
     transition: 0.5s;
@@ -25,6 +49,10 @@ img {
 .nav-item:hover a {
     color: #fb7400 !important;
 }
+/*  */
+
+
+/* HEADER */
 header.hero .container {
     z-index: 999;
 }
@@ -33,24 +61,21 @@ header.hero {
     overflow: hidden;
     position: relative;
 }
-
-.img-opaca {
-    position: absolute;
-    pointer-events: none;
-    z-index: 9;
-    opacity: 0.4;
-    min-width: 100%;
-    min-height: 100%;
-    padding: 0;
-    left: 0;
+  /* Form */
+.input input {
+    border-radius: 4px 0 0 4px;
+    border: none;
 }
-/* .color {
-    position: absolute;
-    pointer-events: none;
-    width: 100%;
-    background-color: #353d50;
-} */
+.input-form {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+  /*  */
+/*  */
 
+
+/* BIENVENIDOS */
 div.big_image_servicios {
     height: 90vh;
     padding: 0;
@@ -70,12 +95,41 @@ div.big_image_servicios::after {
     border-left: 125px solid #fb7400;
 }
 
-/* FILTRO */
+
+/* ABOUT Y SERVICIOS */
+  /* Services */
+.case {
+    width: 35px;
+    padding: 0;
+}
+.into_case {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.bola_naranja {
+    position: absolute;
+    background: orange;
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 12px;
+    left: -12px;
+
+    animation-name: growUp;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+  /* About */
+    /* filtro */
 .descripcion_filtrada {
     background-color: white;
     border-radius: 4px;
     box-shadow: 0px 0px 1px grey;
 }
+    /* clases del efecto del filtro */
 #p_1, #p_2, #p_3 {
     position: absolute;
     left: 0;
@@ -88,22 +142,17 @@ div.big_image_servicios::after {
     opacity: 1 !important;
     transition: 0.5s;
 }
+    /*  */
 
-button.contact_us {
-    display: inherit;
-    margin: 0 auto;
-}
-
+/* SLIDER */
 .box_slider {
     background-color: #1e263b;
     position: relative;
     overflow: hidden;
 }
-
 .left, .right {
     z-index: 9;
 }
-
 .caption_style {
     background-color: white;
     border-radius: 10px;
@@ -118,27 +167,47 @@ button.contact_us {
 .caption_style h5 {
     color: #fb7400;
 }
+.img-opaca {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9;
+    opacity: 0.4;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    left: 0;
+}
 
+
+/* SOCIAL MEDIA */
 h4.description_social {
     align-items: end;
     display: flex;
 }
-
-.case {
-    width: 35px;
-    padding: 0;
-}
-
-.linkcito img {
-    width: 16px;
-}
-
 .linkcito {
     color: white;
     text-decoration: none;
 }
+.linkcito img {
+    width: 16px;
+}
 
-/*  */
+
+/* FOOTER */
+.columna_uno {
+    position: relative;
+}
+.columna_uno .tit-section h3:after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: #fb7400;
+    display: block;
+}
+
+
+/* CLASES GENERICAS */
 .bg-naranja {
     background-color: #fb7400;
 }
@@ -158,29 +227,7 @@ h4.description_social {
 .color-ocean {
     color: #8cd7bc;
 }
-.input input {
-    border-radius: 4px 0 0 4px;
-    border: none;
-}
-.input-form {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid lightgray;
-}
 /*  */
-
-.columna_uno {
-    position: relative;
-}
-.columna_uno .tit-section h3:after {
-    content: "";
-    width: 80px;
-    height: 2px;
-    position: absolute;
-    background: #fb7400;
-    display: block;
-}
-
 
 /* BOTONES */
 .btn_1 {
@@ -193,7 +240,7 @@ h4.description_social {
     transition: 0.6s
 }
 .btn_1:hover {
-    box-shadow: 0px 0px 5px #353d50;
+    box-shadow: 0px 0px 10px #353d50;
     transition: 0.6s
 }
 .btn_2 {
@@ -217,21 +264,10 @@ h4.description_social {
     border-radius: 0px 4px 4px 0px;
     transition: 0.6s
 }
-
-/* slider de servicios */
-.into_case {
-    border-radius: 50%;
-    border: 1px solid white;
-}
-.bola_naranja {
-    position: absolute;
-    background: orange;
-    border-radius: 50%;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 10px;
-    left: -10px;
+/* boton de about y services */
+button.contact_us {
+    display: inherit;
+    margin: 0 auto;
 }
 
 /* botones indicadores slider */
@@ -255,37 +291,8 @@ h4.description_social {
     background: #fb7400 !important;
 }
 
-/* seccion copyright */
+/* SECCION COPYRIGHT */
 .log_icon {
     width: 200px;
     margin: 0 auto;
-}
-
-/* barra de horarios */
-.contenedor_horarios_ubicacion {
-    align-self: center;
-}
-/* follow us */
-.contenedor_follow_us {
-    align-self: center;
-}
-img.follow_us_img {
-    background-color: white;
-    border-radius: 2px;
-    width: 20px;
-    min-width: 15px;
-}
-
-/* telon */
-.telon {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #fb7400;
-    transition: 0.8s;
-    opacity: 1;
-    pointer-events: none;
-    z-index: 9999;
 }

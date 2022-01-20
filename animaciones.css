@@ -1,0 +1,20 @@
+/* animacion para los iconos del carousel de servicios */
+@keyframes growUp {
+    0% {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 0px white;
+    }
+    50% {
+        width: 110%;
+        height: 110%;
+        box-shadow: 0px 0px 12px white;
+        top: -2px;
+        left: -1px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 0px white;
+    }
+}

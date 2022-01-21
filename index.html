@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animaciones.css">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Prueba Silvera</title>
 </head>
 <body>
@@ -97,7 +98,8 @@
       </nav>
 
       <!-- HERO -->
-      <header id="header" class="mb-3 mb-md-5 py-3 py-md-5 hero bg-azul-oscuro min-vh-100 align-items-center d-flex text-white">
+      <header id="header" class="mb-3 mb-md-5 py-3 py-md-5 hero bg-azul-oscuro min-vh-100 align-items-center d-flex text-white"
+                          data-aos="fade-in">
           <video class="img-opaca" autoplay muted loop id="myVideo">
             <source src="img/hero-background.mp4" type="video/mp4">
           </video>
@@ -106,13 +108,17 @@
               <div class="row justify-content-around">
                   <div class="col-md-6 col-10 align-items-center d-flex">
                     <div class="box">
-                        <h1 class="fs-1 fw-bold text-capitalize">We create the desired home for you.</h1>
+                        <h1 class="fs-1 fw-bold text-capitalize">
+                            We create the desired home for you.
+                        </h1>
                         <p class="descrition lh-sm">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto vel ut quia ducimus at quam molestias illum aperiam. Quasi quisquam porro, consequuntur saepe rerum assumenda voluptate fugit exercitationem ipsum fuga?
                         </p>
                     </div>
                   </div>
-                  <div class="formulario_hero bg-gris p-4 py-5 col-md-4 col-10">
+                  <div class="formulario_hero bg-gris p-4 py-5 col-md-4 col-10"
+                        data-aos="fade-in"
+                        data-aos-delay="2500">
                       <h2 class="fs-2 fw-bold text-black">Make a reservation.</h2>
                         <form action="">
                             <input class="col-12 input-form p-2 pt-4 text-black fw-bold" placeholder="Name" type="text" name="" id="">
@@ -143,9 +149,11 @@
       <section id="servicios" class="my-3 my-md-5 py-3 py-md-5 servicios">
           <div class="container">
               <div class="row justify-content-evenly align-items-center">
-                <div class="big_image_servicios col-12 col-md-5 mb-5 mb-md-0">
+                <div class="big_image_servicios col-12 col-md-5 mb-5 mb-md-0"
+                     data-aos="fade-up">
                 </div>
-                <div class="services_content col-12 col-md-5">
+                <div class="services_content col-12 col-md-5"
+                     data-aos="fade-up">
                     <div class="content_header">
                         <h6 class="fs-6 color-naranja fw-bold text-uppercase mb-0">
                             welcome to construction company
@@ -195,7 +203,8 @@
           <div class="container">
             <div class="row justify-content-evenly align-items-center">
 
-                <div class="col-12 pb-5 pb-md-0 col-md-5 justify-content-evenly">
+                <div class="col-12 pb-5 pb-md-0 col-md-5 justify-content-evenly"
+                    data-aos="fade-up">
                     <h6 class="fs-6 fw_bold color-naranja text-uppercase mb-0">
                         about us
                     </h6>
@@ -244,7 +253,8 @@
                     </button>
                 </div>
 
-                <div class="col-12 col-md-4 justify-content-evenly">
+                <div class="col-12 col-md-4 justify-content-evenly"
+                     data-aos="fade-up">
                     <h6 class="fs-6 fw-bold color-naranja text-uppercase mb-0">
                         services
                     </h6>
@@ -379,7 +389,8 @@
       </section>
 
       <!-- SECCION DE GALLERY -->
-      <section id="gallery" class="my-5 py-3 py-md-5 gallery bg-azul-oscuro text-white">
+      <section id="gallery" class="my-5 py-3 py-md-5 gallery bg-azul-oscuro text-white"
+                data-aos="fade-up">
         <div class="container">
             <div class="espacio row justify-content-center">
                 <div class="contenedor_interno col-10">
@@ -418,7 +429,8 @@
       </section>
 
       <!-- SECCION DEL SLIDER -->
-      <section id="slider" class="my-3 my-md-5 py-3 py-md-5 slider text-white">
+      <section id="slider" class="my-3 my-md-5 py-3 py-md-5 slider text-white"
+               data-aos="fade-up">
           <div class="container">
               <div class="container_interno_slider row justify-content-center">
                   <div class="box_slider col-10 pt-5 pb-5 row align-items-center">
@@ -474,7 +486,8 @@
       </section>
 
       <!-- SECCION DE SOCIAL MEDIA -->
-      <section id="social" class="mb-3 mt-5 my-md-5 py-3 py-md-5 social">
+      <section id="social" class="mb-3 mt-5 my-md-5 py-3 py-md-5 social"
+                data-aos="fade-up">
           <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="social_left col-10 col-md-5">
@@ -628,7 +641,11 @@
         </div>
       </section>
 
-      <script src="bootstrap.js"></script>
-      <script src="script.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
 </body>
 </html>

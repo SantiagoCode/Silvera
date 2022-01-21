@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 img {
     max-width: 100%;
 }
@@ -79,7 +83,7 @@ header.hero {
 div.big_image_servicios {
     height: 90vh;
     padding: 0;
-    background-image: url(img/about.jpg);
+    background-image: url(../img/about.jpg);
     background-position: center;
     background-size: cover;
 }

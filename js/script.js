@@ -8,7 +8,6 @@ window.addEventListener("load", function(){
 })
 
 // "pseudo-filtro" de mision, vision y valores 
-
 // botones
 let btn_mission = document.getElementById("btn_1");
 let btn_vision = document.getElementById("btn_2");
